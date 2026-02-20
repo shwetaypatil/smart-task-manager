@@ -52,4 +52,19 @@ SQLite Database (instance folder)
 
 ---
 
+## 🤖 AI Usage & Guidance Documentation
+
+AI tools were used as development assistants to improve productivity, clarity, and debugging efficiency during this project. All architectural decisions and implementation logic were manually reviewed, tested, and validated.
+
+### 🔹 AI Usage Scope
+
+AI was used for:
+
+- Scaffolding initial Flask project structure
+- Generating RESTful CRUD endpoint templates
+- Reviewing SQLAlchemy model patterns
+- Debugging environment configuration issues (Windows venv, SQLite path resolution)
+- Suggesting UI improvements and layout refinements
+- Improving documentation clarity and structure
+- Refining walkthrough structure and explanation flow
 
