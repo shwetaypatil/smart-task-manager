@@ -7,7 +7,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState({});
 
-  const API_URL = "http://127.0.0.1:5000";
+  const API_URL = "https://smart-task-manager-m0xd.onrender.com";
 
   // Fetch tasks
   const fetchTasks = async () => {
