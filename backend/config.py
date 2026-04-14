@@ -1,11 +1,17 @@
+# import os
+
+# BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+# INSTANCE_DIR = os.path.join(BASE_DIR, "instance")
+
+# # Create instance folder if it doesn't exist
+# os.makedirs(INSTANCE_DIR, exist_ok=True)
+
+# class Config:
+#     SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(INSTANCE_DIR, "db.sqlite3")
+#     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 import os
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-INSTANCE_DIR = os.path.join(BASE_DIR, "instance")
-
-# Create instance folder if it doesn't exist
-os.makedirs(INSTANCE_DIR, exist_ok=True)
-
 class Config:
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(INSTANCE_DIR, "db.sqlite3")
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
